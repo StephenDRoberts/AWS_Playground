@@ -1,0 +1,32 @@
+spring:
+  main:
+    banner-mode: "off"
+
+data:
+  populator: false
+
+server:
+  port: ${SERVER_PORT:8080}
+  connection-timeout: 5000000000
+
+management:
+  server:
+    port: ${MONITORING_PORT:8081}
+    ssl:
+      enabled: false
+  endpoints:
+    enabled-by-default: false
+    web:
+      exposure:
+        include: "health, prometheus"
+  endpoint:
+    prometheus:
+      enabled: true
+    health:
+      enabled: true
+cloud:
+  aws:
+    region:
+      static: "eu-west-2"
+    stack:
+      auto: false
