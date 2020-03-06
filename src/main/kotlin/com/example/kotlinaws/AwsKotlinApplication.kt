@@ -4,9 +4,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class TradingToolAwsApplication
+class AwsKotlinApplication
 
 fun main(args: Array<String>) {
-    runApplication<TradingToolAwsApplication>(*args)
+    runApplication<AwsKotlinApplication>(*args)
 }
 

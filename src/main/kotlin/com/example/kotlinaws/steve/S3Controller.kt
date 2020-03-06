@@ -97,7 +97,7 @@ class DataPopulator(val amazonS3: AmazonS3) {
         amazonS3.createBucket("steves-amazing-data-test")
         println("I am sending data..")
 
-        IntRange(0, 500).forEach {
+        IntRange(0, 50).forEach {
 
             val homeGoals = Random().nextInt(10)
             val awayGoals = Random().nextInt(10)
